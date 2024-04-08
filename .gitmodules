@@ -1,6 +1,6 @@
-[submodule "back"]
+[submodule "app/src/back"]
 	path = app/src/back
 	url = git@github.com:C0rv0dev/energy-node-back.git
-[submodule "front"]
-    path = app/src/front
-    url = git@github.com:C0rv0dev/energy-node-front.git
+[submodule "app/src/front"]
+	path = app/src/front
+	url = git@github.com:C0rv0dev/energy-node-front.git
