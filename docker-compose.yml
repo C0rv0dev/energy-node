@@ -5,8 +5,12 @@ services:
       context: ./app/src/front
       dockerfile: Dockerfile
     stdin_open: true # this line is important to keep the container running and listening
+    volumes:
+      - ./app/src/front:/usr/src/app
     ports:
       - "${APP_PORT}:${APP_PORT}"
+    environment:
+       CHOKIDAR_USEPOLLING: "true"
     networks:
       - energy-node-app
   back:
