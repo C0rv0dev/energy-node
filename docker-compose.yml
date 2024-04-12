@@ -7,6 +7,7 @@ services:
     stdin_open: true # this line is important to keep the container running and listening
     volumes:
       - ./app/src/front:/usr/src/app
+      - ./app/src/front/node_modules
     ports:
       - "${APP_PORT}:${APP_PORT}"
     environment:
